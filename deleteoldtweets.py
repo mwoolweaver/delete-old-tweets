@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/bin/python3
 '''
 Deletes old tweets.
 '''
@@ -27,8 +27,8 @@ def main():
         prints a tweet
         '''
         print(status.id_str)
-        print(status.created_at)
-        print(status.text)
+        # print(status.created_at)
+        # print(status.text)
         if status.text.startswith('RT @') and status.created_at.year <= 2012:
             print("Automatically deleting old RT")
             # api.destroy_status(id = status.id)

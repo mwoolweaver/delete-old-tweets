@@ -40,7 +40,7 @@ def main():
         '''
         fetches old tweets
         '''
-        time.sleep(5)
+        time.sleep(1)
 
         if max_id > 0:
             tweets = api.user_timeline(max_id=max_id, count=200)
